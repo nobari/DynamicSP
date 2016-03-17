@@ -1,20 +1,5 @@
 1. Team Name:
-	- SIGMODTESTGROUP
-	
 2. Team members:
-	- Alexey Karyakin, a2karyak@uwaterloo.ca, University of Waterloo, Computer Science, PhD
-	- Catalin Avram, cavram@uwaterloo.ca, University of Waterloo, Computer Science, PhD
-	- Hemant Saxena, h2saxena@uwaterloo.ca, University of Waterloo, Computer Science, PhD
-	- Jaemyung Kim, jaemyung.kim@uwaterloo.ca, University of Waterloo, Computer Science, PhD
-	- Khaled Ammar, khaled.ammar@uwaterloo.ca, University of Waterloo, Computer Science, PhD
-	- Michael Mior, mmior@uwaterloo.ca, University of Waterloo, Computer Science, PhD
-	- Mustafa Korkmaz, mkorkmaz@uwaterloo.ca, University of Waterloo, Computer Science, PhD
-	
 3. Advisor
-	- Prof. Ken Salem
-	
 4. Brief Explanation
-	- A simple solution that creates and queries a graph using networkx module. 
-	
 5. Third Party code
-	- Python networkx.1.10 module
