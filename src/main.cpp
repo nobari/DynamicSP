@@ -8,6 +8,8 @@
 #include <tbb/concurrent_queue.h>
 #include <boost/align/aligned_allocator.hpp>
 
+#include "PLL.h"
+
 using namespace std;
 using boost::alignment::aligned_allocator;
 
@@ -97,11 +99,13 @@ int main()
 {
 	ios_base::sync_with_stdio(false);
 
-	Graph g;
+	PLL g;
 	uint32_t source, destination;
+	vector<pair<uint32_t, uint32_t>> es;
 	while (cin >> source >> destination){
-		g.add_edge(source, destination);
+		es.push_back(make_pair(source, destination));
 	}
+	g.construct_index(es);
 
 	cout << "R" << endl;
 
@@ -116,13 +120,13 @@ int main()
 			cin >> source >> destination;
 			switch (operation){
 			case 'Q':
-				cout << g.bfs(source, destination) << endl;
+				cout << g.query_distance(source, destination) << endl;
 				break;
 			case 'A':
-				g.add_edge(source, destination);
+				//g.add_edge(source, destination);
 				break;
 			case 'D':
-				g.delete_edge(source, destination);
+				//g.delete_edge(source, destination);
 				break;
 			}
 		}
