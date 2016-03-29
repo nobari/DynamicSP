@@ -123,7 +123,7 @@ int main()
 				cout << g.query_distance(source, destination) << endl;
 				break;
 			case 'A':
-				//g.add_edge(source, destination);
+				g.insert_edge(source, destination);
 				break;
 			case 'D':
 				//g.delete_edge(source, destination);
